@@ -10855,6 +10855,9 @@ textarea.form-control-lg {
 
 #main-content {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 767px) {
@@ -10965,12 +10968,12 @@ textarea.form-control-lg {
   box-shadow: none;
 }
 
-.col {
+#content .col {
   padding-right: 10px !important;
   cursor: pointer;
 }
 @media (max-width: 767px) {
-  .col {
+  #content .col {
     margin-top: 40px;
   }
 }
@@ -11143,4 +11146,56 @@ hr {
   --bs-link-hover-color: #0a58ca;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
+}
+
+footer {
+  background-color: var(--bs-sixthColor);
+  margin-top: 59px;
+}
+
+#footer-content {
+  padding: 60px 0 44px 0;
+}
+
+#footer-blog {
+  margin-bottom: 40px;
+  gap: px;
+}
+
+#footer-blog-item {
+  padding: 10px 0 !important;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+  letter-spacing: -3%;
+  margin-bottom: 0px;
+}
+
+#footer-blog-item p {
+  margin-left: 12px;
+  margin-bottom: 0;
+}
+
+#footer-courses {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+  letter-spacing: -3%;
+}
+
+#footer-courses-item {
+  padding: 0 !important;
+}
+
+#footer-blog-item, #footer-courses {
+  color: var(--bs-seventhColor);
+}
+
+#footer-left h3, #footer-left .h3 {
+  color: var(--bs-firstColor);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -2%;
+  line-height: 20.8px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
