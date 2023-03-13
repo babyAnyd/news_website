@@ -1,0 +1,95 @@
+.col {
+    padding-right: 10px!important;
+    cursor: pointer;
+    @include for-md-phone {
+        margin-top: 40px;
+    }
+}
+
+.card-body {
+    background-color: var(--bs-secondColor);
+    border-radius: 0 0 .375rem .375rem;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-body .rounded-pill {
+    border: 1px solid var(--bs-thirdColor)!important;
+    color: var(--bs-thirdColor)!important;
+}
+
+
+.post-info p:first-child {
+    border: 1px solid var(--bs-thirdColor);
+    border-radius: 20px;
+    padding: 0 12px;
+}
+
+.post-info p {
+    color: var(--bs-fourthColor);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    
+}
+
+.card-body h5 {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -2%;
+    font-weight: 700;
+}
+
+hr {
+    margin: 2px;
+}
+
+.card-footer {
+    border-top: none;
+}
+
+#content {
+    margin-top: 20px;
+}
+
+#main-content {
+    margin-top: 110px;
+}
+
+#card-1 {
+    height: 170px;
+    object-fit: cover;
+    object-position: 100% 20%;
+}
+
+#card-2 {
+    height: 220px;
+    object-fit: cover;
+    object-position: 100% 20%;
+}
+
+.card {
+    transition: all .4s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+//gutter gap
+
+.gy-4 {
+    --bs-gutter-y: 30px;
+    @include for-md-phone {
+        --bs-gutter-y: 1.5rem;
+    }    
+
+}
+.gx-4 {
+    --bs-gutter-x: 50px;
+    @include for-md-phone {
+        --bs-gutter-x: 1.5rem;
+    }
+}

@@ -1,0 +1,111 @@
+#navbar-background {
+    background-color: var(--bs-fifthColor);
+}
+
+#main-content {
+    min-height: calc(100vh);
+}
+
+.navbar .container {
+    @include for-md-phone {
+        width: 95%;
+    }
+}
+
+.navbar-brand{
+    color: var(--bs-eightColor);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.navbar-brand:hover {
+    color: var(--bs-eightColor);
+}
+
+.navbar-nav {
+    @include for-lg-phone { 
+        width:100%;
+        margin: auto;
+    }
+}
+.navbar-collapse {
+    transition: all .4s
+}
+
+.nav-item {
+    @include for-lg-phone{
+        background-color: var(--bs-fifthColor);
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+.nav-item:hover {
+    @include for-lg-phone {
+        background-color: var(--bs-sixthColor);
+        transition: .3s ease;
+    }
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: var(--bs-eightColor);
+    transition: .3s;   
+}
+
+.navbar-nav li:nth-of-type(5) {
+    padding: 0 10px 0 40px;
+    @include for-lg-phone {
+        padding: 10px 0;
+    }
+}
+
+.nav-link {
+    color:var(--bs-firstColor) ;
+    position: relative;
+    letter-spacing: .4px;
+}
+
+
+#sign-up {
+    color: var(--bs-fourthColor)!important;
+    font-weight: 500;
+    @include for-lg-phone {
+        padding: 10px 0;
+    }
+}
+
+#login-btn {
+    border-radius: 50px;
+    padding: 7px 15px;
+    background-color: var(--bs-fifthColor);
+    border: 1px solid var(--bs-fourthColor);
+    color:var(--bs-fourthColor) ;
+    font-weight: 500;
+}
+
+#login-btn:hover {
+    background-color: var(--bs-fifthColor);
+    border: 1px solid var(--bs-ninthColor) ;  
+    color:var(--bs-ninthColor) ;  
+}
+
+//when login button is in active state
+.active {
+    background-color:var(--bs-ninthColor)!important ;
+    border: 1px solid var(--bs-ninthColor)!important ;
+    color:var(--bs-firstColor)!important ; 
+}
+
+//toggler icon custom
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(2,102,255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler {
+    border: 2px solid var(--bs-ninthColor);
+    border-radius: 100%;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
