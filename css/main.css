@@ -11087,6 +11087,10 @@ hr {
   visibility: visible;
 }
 
+.read-mark {
+  position: relative;
+}
+
 #favorite {
   padding-right: 7px;
   font-size: 15px;
