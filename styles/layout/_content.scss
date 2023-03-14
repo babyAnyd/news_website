@@ -10,9 +10,6 @@
     background-color: var(--bs-secondColor);
     border-radius: 0 0 .375rem .375rem;
     padding: 0px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .card-body .rounded-pill {
@@ -43,7 +40,10 @@
 }
 
 hr {
-    margin: 2px;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: end;
 }
 
 .card-footer {
@@ -75,7 +75,44 @@ hr {
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: translateY(-10px)
+}
+
+//delete btn 
+
+.img-container {
+    position: relative;
+    transition: all .4s;
+}
+
+#btn-del {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    visibility: hidden;
+    border-width: 0;
+    border-radius: 10px;
+    background-color: var(--bs-secondColor);
+    font-size: 15px;
+}
+
+#btn-del:hover{
+    background-color: var(--bs-danger);
+}
+
+.img-container:hover #btn-del {
+    visibility: visible;
+}
+
+
+#favorite {
+    padding-right: 7px;
+    font-size: 15px;
+}
+
+//heart icon click state 
+.blue {
+    color: var(--bs-ninthColor);
 }
 
 //gutter gap

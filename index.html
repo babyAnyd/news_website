@@ -10,9 +10,9 @@
     <title>News Website</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top " id="navbar-background">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar-background">
         <div class="container px-0">
-            <a class="navbar-brand px-lg-3 px-sm-3" href="#">refocus</a>
+            <img src="./images/logo.JPG" class="navbar-brand "/>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,129 +41,184 @@
         </div>
     </nav>
     <div class="container" id="main-content">
+        <div class="row pt-4">
+            <div class="col-md-4">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search news..." aria-label="search" id="searchInput"/>
+                </form>
+            </div>
+        </div>
         <div id="main-content-body" class="">
             <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 gx-4 gy-4" id="content">
-                <div class="col" id="to-remove">
+                <div class="col" id="card-state">
                     <div class="card h-100">
-                        <img src="./images/Image-8.png" class="card-img-top" id="card-1" alt="...">
+                        <div class="img-container">
+                            <img src="./images/Image-8.png" class="card-img-top" id="card-1" alt="img-8">
+                            <button id="btn-del"><i class="fa-regular fa-trash-can" ></i></button>
+                        </div>
                         <div class="card-body">
-                            <p class="mt-2 mb-1">Check</p>
-                            <h5 class="card-text">Front-End vs Back-End Developer: What;s the Difference?</h5>
+                            <p class="mt-2 mb-1"><i class="fa-regular fa-circle-check" id="check"></i></p>
+                            <h5 class="card-text">Front-End vs Back-End Developer: What's the Difference?</h5>
+                        </div>
+                        <div class="card-footer post-info ">
                             <hr>
+                            <div class="post-items d-flex  justify-content-between">
+                                <p class="mb-0">January 3, 2023</p>
+                                <p class="mb-0"><i class="fa-solid fa-heart" id="favorite"></i>4,8k</p>
+                            </div>
                         </div>
-                        <div class="card-footer post-info d-flex justify-content-between">
-                            <p class="mb-0">January 3, 2023</p>
-                            <p class="mb-0">4.3k</p>
+                    </div>
+                </div>
+                <div class="col" id="card-state">
+                    <div class="card h-100">
+                        <div class="img-container">
+                            <img src="./images/Image-7.png" class="card-img-top" id="card-2" alt="img-7">
+                            <button id="btn-del"><i class="fa-regular fa-trash-can" ></i></button>
+                        </div>
+                        <div class="card-body">
+                            <p class="mt-2 mb-1"><i class="fa-regular fa-circle-check" id="check"></i></p>
+                            <h5 class="card-text">What is a Full Stack Developer?</h5>
+                        </div>
+                        <div class="card-footer post-info ">
+                            <hr>
+                            <div class="post-items d-flex  justify-content-between">
+                                <p class="mb-0">January 12, 2023</p>
+                                <p class="mb-0"><i class="fa-solid fa-heart" id="favorite"></i>2,2k</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col" id="to-remove">
+                <div class="col" id="card-state">
                     <div class="card h-100">
-                    <img src="./images/Image-7.png" class="card-img-top" id="card-2" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-text">What is a Full Stack Developer?</h5>
-                        <hr>
-                    </div>
-                    <div class="card-footer post-info d-flex justify-content-between">
-                        <p class="mb-0">January 3, 2023</p>
-                        <p class="mb-0">4.3k</p>
-                    </div>
+                        <div class="img-container">
+                            <img src="./images/Image-6.png" class="card-img-top" id="card-1" alt="img-6">
+                            <button id="btn-del"><i class="fa-regular fa-trash-can" ></i></button>
+                        </div>
+                        <div class="card-body">
+                            <p class="mt-2 mb-1"><i class="fa-regular fa-circle-check" id="check"></i></p>
+                            <h5 class="card-text">What are Soft Skills and How Do They Benefit Your Career?</h5>
+                        </div>
+                        <div class="card-footer post-info ">
+                            <hr>
+                            <div class="post-items d-flex  justify-content-between">
+                                <p class="mb-0">January 22, 2023</p>
+                                <p class="mb-0"><i class="fa-solid fa-heart" id="favorite"></i>2,6k</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" id="card-state">
                     <div class="card h-100">
-                    <img src="./images/Image-6.png" class="card-img-top" id="card-1" alt="...">
-                    <div class="card-body">
-                        <p class="mt-2 mb-1">Check</p>
-                        <h5 class="card-text">What are Soft Skills and How Do They Benefit <br> Your Career?</h5>
-                        <hr>
-                    </div>
-                    <div class="card-footer post-info d-flex justify-content-between">
-                        <p class="mb-0">January 3, 2023</p>
-                        <p class="mb-0">4.3k</p>
-                    </div>
+                        <div class="img-container">
+                            <img src="./images/Image-5.png" class="card-img-top" id="card-1" alt="img-5">
+                            <button id="btn-del"><i class="fa-regular fa-trash-can" ></i></button>
+                        </div>
+                        <div class="card-body ">
+                            <p class="mt-2 mb-1"><i class="fa-regular fa-circle-check" id="check"></i></p>
+                            <h5 class="card-text">IT Jobs: In-Demand, Available to Everyone, Ripe With Opportunity</h5>
+                        </div>
+                        <div class="card-footer post-info ">
+                            <hr>
+                            <div class="post-items d-flex  justify-content-between">
+                                <p class="mb-0">January 29, 2023</p>
+                                <p class="mb-0"><i class="fa-solid fa-heart" id="favorite"></i>7,6k</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" id="card-state">
                     <div class="card h-100">
-                    <img src="./images/Image-5.png" id="card-1" class="card-img-top" alt="...">
-                    <div class="card-body justify-content-end">
-                        <p class="mt-2 mb-1">Check</p>
-                        <h5 class="card-text">IT Jobs: In-Demand, Available to Everyone, Ripe With Opportunity</h5>
-                        <hr>
-                    </div>
-                    <div class="card-footer post-info d-flex justify-content-between">
-                        <p class="mb-0">January 3, 2023</p>
-                        <p class="mb-0">4.3k</p>
-                    </div>
+                        <div class="img-container">
+                            <img src="./images/Image-4.png" class="card-img-top" id="card-2" alt="img-4">
+                            <button id="btn-del"><i class="fa-regular fa-trash-can" ></i></button>
+                        </div>
+                        <div class="card-body">
+                            <p class="mt-2 mb-1"><i class="fa-regular fa-circle-check" id="check"></i></p>
+                            <h5 class="card-text">7 Learning Tips for Data Science Self-Study</h5>
+                        </div>
+                        <div class="card-footer post-info ">
+                            <hr>
+                            <div class="post-items d-flex  justify-content-between">
+                                <p class="mb-0">February 1, 2023</p>
+                                <p class="mb-0"><i class="fa-solid fa-heart" id="favorite"></i>4,3k</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" id="card-state">
                     <div class="card h-100">
-                    <img src="./images/Image-4.png" class="card-img-top" id="card-2" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-text">7 Learning Tips for Data Science Self-Study</h5>
-                        <hr>
+                        <div class="img-container">
+                            <img src="./images/Image-3.png" class="card-img-top" id="card-1" alt="img-3">
+                            <button id="btn-del"><i class="fa-regular fa-trash-can" ></i></button>
+                        </div>
+                        <div class="card-body">
+                            <p class="mt-2 mb-1"><i class="fa-regular fa-circle-check" id="check"></i></p>
+                            <h5 class="card-text">Hard Skills vs. Soft Skills: Do You Really Need Both? Why?</h5>
+                        </div>
+                        <div class="card-footer post-info ">
+                            <hr>
+                            <div class="post-items d-flex  justify-content-between">
+                                <p class="mb-0">February 10, 2023</p>
+                                <p class="mb-0"><i class="fa-solid fa-heart" id="favorite"></i>4,9k</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-footer post-info d-flex justify-content-between">
-                        <p class="mb-0">January 3, 2023</p>
-                        <p class="mb-0">4.3k</p>
-                    </div>
+                </div>               
+                <div class="col" id="card-state">
+                    <div class="card h-100">
+                        <div class="img-container">
+                            <img src="./images/Image-2.png" class="card-img-top" id="card-1" alt="img-2">
+                            <button id="btn-del"><i class="fa-regular fa-trash-can" ></i></button>
+                        </div>
+                        <div class="card-body">
+                            <p class="mt-2 mb-1"><i class="fa-regular fa-circle-check" id="check"></i></p>
+                            <h5 class="card-text">What is Javascript?</h5>
+                        </div>
+                        <div class="card-footer post-info ">
+                            <hr>
+                            <div class="post-items d-flex  justify-content-between">
+                                <p class="mb-0">February 16, 2023</p>
+                                <p class="mb-0"><i class="fa-solid fa-heart" id="favorite"></i>3,1k</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" id="card-state">
                     <div class="card h-100">
-                    <img src="./images/Image-3.png" class="card-img-top" id="card-1" alt="...">
-                    <div class="card-body">
-                        <p>Check</p>
-                        <h5 class="card-text">Hard Skills vs. Soft Skills: Do you Really Need Both? Why</h5>
-                        <hr>
-                    </div>
-                    <div class="card-footer post-info d-flex justify-content-between">
-                        <p class="mb-0">January 3, 2023</p>
-                        <p class="mb-0">4.3k</p>
-                    </div>
+                        <div class="img-container">
+                            <img src="./images/Image-1.png" class="card-img-top" id="card-2" alt="img-1">
+                            <button id="btn-del"><i class="fa-regular fa-trash-can" ></i></button>
+                        </div>
+                        <div class="card-body">
+                            <p class="mt-2 mb-1"><i class="fa-regular fa-circle-check" id="check"></i></p>
+                            <h5 class="card-text">Who is a Business Analyst Roles, Skills, Salaries, Job Prospects</h5>
+                        </div>
+                        <div class="card-footer post-info ">
+                            <hr>
+                            <div class="post-items d-flex  justify-content-between">
+                                <p class="mb-0">February 22, 2023</p>
+                                <p class="mb-0"><i class="fa-solid fa-heart" id="favorite"></i>2,4k</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" id="card-state">
                     <div class="card h-100">
-                    <img src="./images/Image-2.png" class="card-img-top" id="card-1" alt="...">
-                    <div class="card-body">
-                        <p>Check</p>
-                        <h5 class="card-text">What is Javascript</h5>
-                        <hr>
-                    </div>
-                    <div class="card-footer post-info d-flex justify-content-between">
-                        <p class="mb-0">January 3, 2023</p>
-                        <p class="mb-0">4.3k</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                    <img src="./images/Image-1.png" class="card-img-top" id="card-2" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-text">Who is a Business Analyst Roles, Skills, Salaries, Job Prospects</h5>
-                        <hr>
-                    </div>
-                    <div class="card-footer post-info d-flex justify-content-between">
-                        <p class="mb-0">January 3, 2023</p>
-                        <p class="mb-0">4.3k</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                    <img src="./images/Image.png" class="card-img-top" id="card-1" alt="...">
-                    <div class="card-body">
-                        <p class="mt-2 mb-1">Check</p>
-                        <h5 class="card-text">How Much Do Data Analyst Make? 2023 Salary Guide</h5>
-                        <hr>
-                    </div>
-                    <div class="card-footer post-info d-flex justify-content-between">
-                        <p class="mb-0">January 3, 2023</p>
-                        <p class="mb-0">4.3k</p>
-                    </div>
+                      <div class="img-container">
+                            <img src="./images/Image.png" class="card-img-top" id="card-1" alt="img">
+                            <button id="btn-del"><i class="fa-regular fa-trash-can" ></i></button>
+                        </div>
+                        <div class="card-body">
+                            <p class="mt-2 mb-1"><i class="fa-regular fa-circle-check" id="check"></i></p>
+                            <h5 class="card-text">How Much Do Data Analyst Make? 2023 Salary Guide</h5>
+                        </div>
+                        <div class="card-footer post-info ">
+                            <hr>
+                            <div class="post-items d-flex  justify-content-between">
+                                <p class="mb-0">February 24, 2023</p>
+                                <p class="mb-0"><i class="fa-solid fa-heart" id="favorite"></i>2,6k</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -172,83 +227,77 @@
             <footer >
                 <div class="container">
                     <div class="row" id="footer-content">
-                        <div class="col-lg-7 " id="footer-left">
+                        <div class="col-lg-8 " id="footer-left">
                             <div class="col">
                                 <h3>BLOG</h2>
                             </div>
-                            <div class="row row-cols-3 row-cols-lg-6 row-cols-sm-5 " id="footer-blog">
-                                <div class="col" id="footer-blog-item">
+                            <div class="row" id="footer-blog">
+                                <div class="col-auto" id="footer-blog-item">
                                     <p class="">Data Analyst</p>
                                 </div>
-                                <div class="col" id="footer-blog-item">
+                                <div class="col-auto" id="footer-blog-item">
                                     <p class="">Web Developer</p>
                                 </div>
-                                <div class="col" id="footer-blog-item">
+                                <div class="col-auto" id="footer-blog-item">
                                     <p class="">Career</p>
                                 </div>
-                                <div class="col" id="footer-blog-item">
+                                <div class="col-auto" id="footer-blog-item">
                                     <p class="">Success Stories</p>
                                 </div>
-                                <div class="col" id="footer-blog-item">
+                                <div class="col-auto" id="footer-blog-item">
                                     <p class="">Resume</p>
                                 </div>
-                                <div class="col" id="footer-blog-item">
+                                <div class="col-auto" id="footer-blog-item">
                                     <p class="">Hard Skills</p>
                                 </div>
-                                <div class="col" id="footer-blog-item">
+                                <div class="col-auto" id="footer-blog-item">
                                     <p class="">Soft Skills</p>
                                 </div>
                             </div>
                             <div class="col">
                                 <h3>OUR COURSES</h3>
                             </div>
-                            <div class="d-flex " id="footer-courses">
-                                <div class="" id="footer-courses-item">
+                            <div class="row" id="footer-courses">
+                                <div class="col-auto" id="footer-courses-item">
                                     <p>Data Analyst</p>
                                 </div>
-                                <div class=" " id="footer-courses-item">
-                                    <p class="px-4">Web Development</p>
+                                <div class="col-auto " id="footer-courses-item">
+                                    <p>Web Development</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5 " id="footer-left">
+                        <div class="col-lg-4 " id="footer-right">
                             <div class="col">
-                                <h3>BLOG</h2>
+                                <h3>Follow us</h2>
                             </div>
-                            <div class="row row-cols-3 row-cols-lg-6 row-cols-sm-5 " id="footer-blog">
-                                <div class="col" id="footer-icons">
-                                    <p class=""><i class="fa-brands fa-linkedin"></i></p>
+                            <div class="row" id="footer-blog">
+                                <div class="col-auto" id="footer-icons">
+                                    <p class=""><i class="fa-brands fa-2x fa-linkedin"></i></p>
                                 </div>
-                                <div class="col" id="footer-icons">
-                                    <p class=""><i class="fa-brands fa-instagram"></i></p>
+                                <div class="col-auto" id="footer-icons">
+                                    <p class=""><i class="fa-brands fa-2x fa-instagram"></i></p>
                                 </div>
-                                <div class="col" id="footer-icons">
-                                    <p class=""><i class="fa-brands fa-facebook"></i></p>
+                                <div class="col-auto" id="footer-icons">
+                                    <p class=""><i class="fa-brands fa-2x fa-facebook"></i></p>
                                 </div>
-                                <div class="col" id="footer-icons">
-                                    <p class=""><i class="fa-brands fa-twitter"></i></p>
+                                <div class="col-auto" id="footer-icons">
+                                    <p class=""><i class="fa-brands fa-2x fa-twitter"></i></p>
                                 </div>
-                                <div class="col" id="footer-icons">
-                                    <p class=""><i class="fa-brands fa-whatsapp"></i></p>
+                                <div class="col-auto" id="footer-icons">
+                                    <p class=""><i class="fa-brands fa-2x fa-whatsapp"></i></p>
                                 </div>
-                                <div class="col" id="footer-icons">
-                                    <p class=""><i class="fa-brands fa-tiktok"></i></p>
+                                <div class="col-auto" id="footer-icons">
+                                    <p class=""><i class="fa-brands fa-2x fa-tiktok"></i></p>
                                 </div>
-                                <div class="col" id="footer-icons">
-                                    <p class=""><i class="fa-brands fa-youtube"></i></p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <h3>OUR COURSES</h3>
-                            </div>
-                            <div class="d-flex " id="footer-courses">
-                                <div class="" id="footer-courses-item">
-                                    <p>Data Analyst</p>
-                                </div>
-                                <div class=" " id="footer-courses-item">
-                                    <p class="px-4">Web Development</p>
+                                <div class="col-auto" id="footer-icons">
+                                    <p class=""><i class="fa-brands fa-2x fa-youtube"></i></p>
                                 </div>
                             </div>
+                                <div class="row" id="footer-legality">
+                                    <div class="col-auto" id="footer-legality-item">
+                                        <p><i class="fa-sharp fa-regular fa-copyright"></i> Refocus Limited 2023 Privacy Policy · Terms of Use</p>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>

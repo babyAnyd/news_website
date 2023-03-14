@@ -4,9 +4,6 @@
 
 #main-content {
     min-height: calc(100vh);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .navbar .container {
@@ -15,14 +12,26 @@
     }
 }
 
+.navbar {
+    padding:24px 0!important;
+}
+
 .navbar-brand{
-    color: var(--bs-eightColor);
-    font-size: 40px;
-    font-weight: 500;
+    height: 50px;
+    padding-left: 13px;
+    padding-top: 6px!important;
+    @include for-md-phone {
+        padding-left: 0;
+    }
+}
+
+.navbar-nav .nav-link.active {
+    color: yellow;
 }
 
 .navbar-brand:hover {
     color: var(--bs-eightColor);
+    cursor: default;
 }
 
 .navbar-nav {
